@@ -20,11 +20,13 @@ module.exports = {
 			},
             {
                 test: /\.(png|jpg)$/i,
-                type: 'asset/resource',
-                use: [{
-                    loader: 'image-webpack-loader',
+                type: 'asset',
+                use: [
+				{
+                    loader: 'webpack-image-resize-loader',
                     options: {
-						quality: 10,
+						quality: 75,
+						width: 300,
                     }
                 }],
                 generator: {
