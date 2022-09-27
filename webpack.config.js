@@ -17,7 +17,20 @@ module.exports = {
 					'style-loader',
 					'css-loader'
 				]
-			}
+			},
+            {
+                test: /\.(png|jpg)$/i,
+                type: 'asset/resource',
+                use: [{
+                    loader: 'image-webpack-loader',
+                    options: {
+						quality: 10,
+                    }
+                }],
+                generator: {
+                    filename: 'img/[name]-[hash][ext]'
+                }
+            }
 		]
 	},
 	output: {

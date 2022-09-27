@@ -34,3 +34,19 @@ footer {
     margin-right: 2vw;
     padding: 1vw;
 }
+
+.menu-tab {
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu-card {
+    width: 20vw;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-card img {
+    width: 20vw;
+}
