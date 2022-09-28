@@ -1,3 +1,7 @@
+/*
+  Author: przewnic
+  Project: Restaurant-Page 
+*/
 import fried_d from "../../static/img/menu/pexels-anna-tarazevich-7287719.jpg";
 import spinach_d from "../../static/img/menu/pexels-cats-coming-750941.jpg"
 import soup_d from "../../static/img/menu/pexels-cats-coming-955137.jpg";

@@ -1,3 +1,7 @@
+/*
+  Author: przewnic
+  Project: Restaurant-Page 
+*/
 import { createCard } from "../card";
 import dish_1 from "../../static/img/contact/pexels-anna-tarazevich-7287725.jpg";
 import dish_2 from "../../static/img/contact/pexels-anna-tarazevich-7287728.jpg";

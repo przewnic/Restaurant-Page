@@ -1,3 +1,7 @@
+v/*
+  Author: przewnic
+  Project: Restaurant-Page 
+*/
 import { createCard } from "../card";
 import dumplings_1 from "../../static/img/home/pexels-anna-tarazevich-7251845.jpg";
 import dumplings_2 from "../../static/img/home/pexels-anna-tarazevich-7287687.jpg";

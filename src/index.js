@@ -1,10 +1,14 @@
+/*
+  Author: przewnic
+  Project: Restaurant-Page 
+*/
 import { createHeader } from "./header";
 import { createFooter } from "./footer"
 import { createHome } from "./pages/home";
 import { createMenu } from "./pages/menu";
 import { createContact } from "./pages/contact";
 
-// import "../static/styles/style.css"  // Styles with loader
+import "../static/styles/styles.css"  // Styles with loader
 const content = document.getElementById("content");
 
 content.appendChild(createHeader());

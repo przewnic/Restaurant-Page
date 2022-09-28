@@ -1,3 +1,7 @@
+/*
+  Author: przewnic
+  Project: Restaurant-Page 
+*/
 function createHeader() {
     const header = document.createElement("header");
 
