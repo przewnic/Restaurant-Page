@@ -32,9 +32,11 @@ function createCard(dishName, imgSrc) {
     dishImg.src = imgSrc;
     card.appendChild(dishImg);
 
+    const dishDescription = document.createElement("div");
     const dish = document.createElement("p");
     dish.innerHTML = dishName;
-    card.appendChild(dish);
+    dishDescription.appendChild(dish);
+    card.appendChild(dishDescription);
 
     return card
 }

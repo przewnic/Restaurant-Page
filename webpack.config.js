@@ -25,8 +25,8 @@ module.exports = {
 				{
                     loader: 'webpack-image-resize-loader',
                     options: {
-						quality: 75,
-						width: 300,
+						quality: 80,
+						width: 500,
                     }
                 }],
                 generator: {

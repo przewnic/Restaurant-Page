@@ -37,16 +37,26 @@ footer {
 
 .menu-tab {
     padding: 5vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vw;
+    justify-content: center;
 }
 
 .menu-card {
-    width: 20vw;
+    width: 30vw;
+    height: 40vw;
+    min-width: 350px;
+    max-width: 450px;
     margin: 0;
     padding: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
 }
 
 .menu-card img {
-    width: 20vw;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
 }
