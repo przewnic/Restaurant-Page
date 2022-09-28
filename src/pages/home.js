@@ -1,10 +1,25 @@
+import { createCard } from "../card";
+import dumplings_1 from "../../static/img/home/pexels-anna-tarazevich-7251845.jpg";
+import dumplings_2 from "../../static/img/home/pexels-anna-tarazevich-7287687.jpg";
+import dumplings_3 from "../../static/img/home/pexels-anna-tarazevich-7287697.jpg";
+
 function createHome() {
     const tab = document.createElement("div");
+    tab.classList.add("tab");
+    tab.classList.add("home-tab");
     
-    const info = document.createElement("p");
-    info.innerHTML = "Dumplings - the best Dumplings in your town!";
-    tab.appendChild(info);
+    const cardText_1 = "The best Dumplings in your town!";
+    const card_1 = createCard(dumplings_1, "Dumplings", cardText_1, "home-card");
+    tab.appendChild(card_1);
 
+    const cardText_2 = "Visit us today";
+    const card_2 = createCard(dumplings_2, "Dumplings", cardText_2, "home-card");
+    tab.appendChild(card_2);
+
+    const cardText_3 = "Your favorite dumplings are waiting!";
+    const card_3 = createCard(dumplings_3, "Dumplings", cardText_3, "home-card");
+    tab.appendChild(card_3);
+    
     return tab
 }
 

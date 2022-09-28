@@ -16,8 +16,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5vw 0 5vw;
-    background-color: var(--light-gray)
+    padding: 1vw 5vw 1vw 5vw;
+    background-color: var(--light-gray);
+    max-height: 100px;
 }
 
 footer {
@@ -30,10 +31,12 @@ footer {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 2vw;
+    font-size: max(min(2.5vw, 26px), 16px);
     margin-right: 2vw;
-    padding: 1vw;
+    padding: 0.5vw;
 }
+
+/* Menu cards */
 
 .menu-tab {
     padding: 5vw;
@@ -46,17 +49,81 @@ footer {
 
 .menu-card {
     width: 30vw;
-    height: 40vw;
+    height: 30vw;
     min-width: 350px;
     max-width: 450px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    min-height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu-card div {
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-card img {
     height: 80%;
     width: 100%;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home cards */
+
+.home-tab {
+    /* width: 80%; */
+    padding: 5vw 0vw 5vw 0vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+}
+
+.home-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+    max-width: 1000px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home-card div {
+    width: 50%;
+}
+
+.home-card img {
+    object-fit: cover;
+    width: 50%;
+}
+
+/* Contact cards */
+.contact-tab {
+    padding: 5vw 0 5vw 0;
+    display: flex;
+    gap: 5vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    border: 2px solid rgb(231, 196, 3);
+    border-radius: 2vw;
+}
+
+.contact-card div {
+    width: 50%; 
+}
+
+.contact-card img {
+    width: 50%;
+    border-radius: 2vw;
 }

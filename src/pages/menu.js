@@ -1,10 +1,10 @@
-import fried_d from "../../static/img/pexels-anna-tarazevich-7287719.jpg";
-import spinach_d from "../../static/img/pexels-cats-coming-750941.jpg"
-import soup_d from "../../static/img/pexels-cats-coming-955137.jpg";
-import soucey_d from "../../static/img/pexels-cats-coming-1385185.jpg";
-import parsley_d from "../../static/img/pexels-cottonbro-3296903.jpg";
-import pierogis_d from "../../static/img/pexels-jamie-saw-13055484.jpg";
-import round_d from "../../static/img/pexels-momo-king-5409015.jpg";
+import fried_d from "../../static/img/menu/pexels-anna-tarazevich-7287719.jpg";
+import spinach_d from "../../static/img/menu/pexels-cats-coming-750941.jpg"
+import soup_d from "../../static/img/menu/pexels-cats-coming-955137.jpg";
+import soucey_d from "../../static/img/menu/pexels-cats-coming-1385185.jpg";
+import parsley_d from "../../static/img/menu/pexels-cottonbro-3296903.jpg";
+import pierogis_d from "../../static/img/menu/pexels-jamie-saw-13055484.jpg";
+import round_d from "../../static/img/menu/pexels-momo-king-5409015.jpg";
 
 
 function createMenu() {

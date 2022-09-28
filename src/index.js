@@ -10,6 +10,7 @@ const content = document.getElementById("content");
 content.appendChild(createHeader());
 // main - dynamically rendered pages
 const main = document.createElement("main");
+main.appendChild(createHome());
 content.appendChild(main);
 content.appendChild(createFooter());
 
