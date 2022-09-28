@@ -17,13 +17,13 @@ function createMenu() {
     tab.classList.add("tab");
     tab.classList.add("menu-tab");
 
-    tab.appendChild(createCard(fried_d, "Fried Dumplings", "Fried Dumplings", menu-card));
-    tab.appendChild(createCard(spinach_d, "Spinach Dumplings", "Spinach Dumplings", menu-card));
-    tab.appendChild(createCard(soup_d, "Soup Dumplings", "Soup Dumplings", menu-card));
-    tab.appendChild(createCard(soucey_d, "Soucey Dumplings", "Soucey Dumplings", menu-card));
-    tab.appendChild(createCard(parsley_d, "Parsley Dumplings", "Parsley Dumplings", menu-card));
-    tab.appendChild(createCard(pierogis_d, "Pierogis Dumplings", "Pierogis Dumplings", menu-card));
-    tab.appendChild(createCard(round_d, "Round Dumplings", "Round Dumplings", menu-card));
+    tab.appendChild(createCard(fried_d, "Fried Dumplings", "Fried Dumplings", "menu-card"));
+    tab.appendChild(createCard(spinach_d, "Spinach Dumplings", "Spinach Dumplings", "menu-card"));
+    tab.appendChild(createCard(soup_d, "Soup Dumplings", "Soup Dumplings", "menu-card"));
+    tab.appendChild(createCard(soucey_d, "Soucey Dumplings", "Soucey Dumplings", "menu-card"));
+    tab.appendChild(createCard(parsley_d, "Parsley Dumplings", "Parsley Dumplings", "menu-card"));
+    tab.appendChild(createCard(pierogis_d, "Pierogis Dumplings", "Pierogis Dumplings", "menu-card"));
+    tab.appendChild(createCard(round_d, "Round Dumplings", "Round Dumplings", "menu-card"));
 
     return tab
 }

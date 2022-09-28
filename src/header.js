@@ -10,7 +10,7 @@ function createHeader() {
     header.appendChild(logo);
 
     const nav = document.createElement("nav");
-    nav.appendChild(createTabButton("Home"));
+    nav.appendChild(createTabButton("Home", true));
     nav.appendChild(createTabButton("Menu"));
     nav.appendChild(createTabButton("Contact"));
 
@@ -20,12 +20,14 @@ function createHeader() {
 }
 
 
-function createTabButton(name) {
+function createTabButton(name, active=false) {
     const tab = document.createElement("button");
     tab.innerHTML = name;
     tab.id = name;
     tab.classList.add("nav-button");
-
+    if (active) {
+      tab.classList.add("active");
+    }
     return tab;
 }
 

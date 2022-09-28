@@ -8,7 +8,7 @@ import { createHome } from "./pages/home";
 import { createMenu } from "./pages/menu";
 import { createContact } from "./pages/contact";
 
-import "../static/styles/styles.css"  // Styles with loader
+// import "../static/styles/styles.css"  // Styles with loader
 const content = document.getElementById("content");
 
 content.appendChild(createHeader());
@@ -21,14 +21,18 @@ content.appendChild(createFooter());
 const navButtons = document.querySelectorAll(".nav-button");
 
 for (let button of navButtons) {
-    button.addEventListener("click", (event) => {renderMain(event, main);});
+    button.addEventListener("click", (event) => {renderMain(event, main, navButtons);});
 }
 
 
-function renderMain(event, tabContainer) {
+function renderMain(event, tabContainer, navButtons) {
     if (tabContainer.firstChild) {
         tabContainer.removeChild(tabContainer.firstChild);
     }
+    for (let button of navButtons) {
+        button.classList.remove("active");
+    }
+    event.target.classList.add("active");
 
     switch(event.target.id) {
         case "Home":

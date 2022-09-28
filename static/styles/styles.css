@@ -35,7 +35,7 @@ header {
     align-items: center;
     padding: 1vw 5vw 1vw 5vw;
     background-color: var(--light-gray);
-    max-height: 100px;
+    height: 52px;
 }
 
 footer {
@@ -53,10 +53,12 @@ footer {
     cursor: pointer;
 }
 
-.nav-button:hover {
+.nav-button:hover, .nav-button.active {
     background-color: var(--matcha-green);
     color: white;
 }
+
+
 
 /* Menu cards */
 
@@ -111,8 +113,9 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 70vw;
-    max-width: 1000px;
+    width: 80vw;
+    min-width: 350px;
+    max-width: 900px;
     height: 35vw;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2), 0 8px 8px 0px rgba(0, 0, 0, 0.18);
     border-radius: 2vw;
@@ -122,9 +125,22 @@ footer {
     width: 50%;
 }
 
-.home-card img, .contact-card img, #gmap-canvas {
+.home-card img, .contact-card img {
     object-fit: cover;
     width: 50%;
     height: 100%;
+    border-radius: 2vw 0 0 2vw;
+}
+
+/* Maps */
+.gmap-div {
+    height: 100%;
+    width: 100%;
+}
+
+#gmap-canvas {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     border-radius: 2vw 0 0 2vw;
 }
