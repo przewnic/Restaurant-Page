@@ -1,4 +1,4 @@
-v/*
+/*
   Author: przewnic
   Project: Restaurant-Page 
 */
