@@ -8,7 +8,7 @@ function createContact() {
     tab.classList.add("tab");
     tab.classList.add("contact-tab");
 
-    const cardText_1 = "Call us today and order ypur favorite Dumplings!";
+    const cardText_1 = "Call us today and order your favorite Dumplings!";
     const card_1 = createCard(dish_1, "Dumplings", cardText_1, "contact-card");
     tab.appendChild(card_1);
 

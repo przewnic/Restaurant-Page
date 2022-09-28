@@ -8,12 +8,29 @@ html, body, #content {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
     height: 100%;
+}
+
+main {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: min(20px, 5vw);
 }
 
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 1vw 5vw 1vw 5vw;
@@ -27,19 +44,23 @@ footer {
 }
 
 .nav-button {
-    background-color: var(--matcha-green);
-    color: white;
-    border: none;
+    border: 2px solid var(--matcha-green);
+    color: black;
     border-radius: 5px;
     font-size: max(min(2.5vw, 26px), 16px);
     margin-right: 2vw;
     padding: 0.5vw;
 }
 
+.nav-button:hover {
+    background-color: var(--matcha-green);
+    color: white;
+}
+
 /* Menu cards */
 
 .menu-tab {
-    padding: 5vw;
+    padding: 5vw 0vw 5vw 0vw;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +75,7 @@ footer {
     max-width: 450px;
     min-height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 2vw;
 }
 
 .menu-card div {
@@ -70,60 +92,38 @@ footer {
     object-fit: cover;
     margin: 0;
     padding: 0;
+    border-radius: 2vw 2vw 0vw 0vw;
 }
 
-/* Home cards */
+/* Home, Contact cards */
 
-.home-tab {
-    /* width: 80%; */
+.home-tab, .contact-tab {
     padding: 5vw 0vw 5vw 0vw;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    justify-content: flex-start;
     align-items: center;
+    gap: 5vw;
 }
 
-.home-card {
+.home-card, .contact-card {
     display: flex;
     align-items: center;
     text-align: center;
     width: 70vw;
     max-width: 1000px;
-    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+    height: 35vw;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2), 0 8px 8px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 2vw;
 }
 
-.home-card div {
+.home-card div, .contact-card div {
     width: 50%;
 }
 
-.home-card img {
+.home-card img, .contact-card img {
     object-fit: cover;
     width: 50%;
-}
-
-/* Contact cards */
-.contact-tab {
-    padding: 5vw 0 5vw 0;
-    display: flex;
-    gap: 5vw;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-card {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 90vw;
-    border: 2px solid rgb(231, 196, 3);
-    border-radius: 2vw;
-}
-
-.contact-card div {
-    width: 50%; 
-}
-
-.contact-card img {
-    width: 50%;
-    border-radius: 2vw;
+    height: 100%;
+    border-radius: 2vw 0 0 2vw;
 }
