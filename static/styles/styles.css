@@ -1,6 +1,8 @@
 :root {
     --matcha-green: forestgreen; 
     --light-gray: rgba(211, 211, 211, 0.5);
+
+    --header-height: 52px;
 }
 
 html, body, #content {
@@ -13,6 +15,7 @@ html, body, #content {
 }
 
 main {
+    margin-top: var(--header-height);
     flex: 1 0 0;
     display: flex;
     justify-content: center;
@@ -29,13 +32,15 @@ p {
 
 header {
     display: flex;
-    position: sticky;
-    top: 0;
-    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    padding: 1vw 5vw 1vw 5vw;
+    padding: 0;
+    margin: 0;
     background-color: var(--light-gray);
-    height: 52px;
+    height: var(--header-height);
 }
 
 footer {
@@ -43,12 +48,17 @@ footer {
     background-color: var(--light-gray);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
 .nav-button {
     border: 2px solid var(--matcha-green);
     color: black;
     border-radius: 5px;
     font-size: max(min(2.5vw, 26px), 16px);
-    margin-right: 2vw;
     padding: 0.5vw;
     cursor: pointer;
 }
@@ -57,7 +67,6 @@ footer {
     background-color: var(--matcha-green);
     color: white;
 }
-
 
 
 /* Menu cards */
@@ -98,6 +107,7 @@ footer {
     border-radius: 2vw 2vw 0vw 0vw;
 }
 
+
 /* Home, Contact cards */
 
 .home-tab, .contact-tab {
@@ -131,6 +141,7 @@ footer {
     height: 100%;
     border-radius: 2vw 0 0 2vw;
 }
+
 
 /* Maps */
 .gmap-div {
