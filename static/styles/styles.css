@@ -50,6 +50,7 @@ footer {
     font-size: max(min(2.5vw, 26px), 16px);
     margin-right: 2vw;
     padding: 0.5vw;
+    cursor: pointer;
 }
 
 .nav-button:hover {
@@ -121,7 +122,7 @@ footer {
     width: 50%;
 }
 
-.home-card img, .contact-card img {
+.home-card img, .contact-card img, #gmap-canvas {
     object-fit: cover;
     width: 50%;
     height: 100%;

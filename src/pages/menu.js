@@ -2,6 +2,7 @@
   Author: przewnic
   Project: Restaurant-Page 
 */
+import { createCard } from "../card";
 import fried_d from "../../static/img/menu/pexels-anna-tarazevich-7287719.jpg";
 import spinach_d from "../../static/img/menu/pexels-cats-coming-750941.jpg"
 import soup_d from "../../static/img/menu/pexels-cats-coming-955137.jpg";
@@ -16,33 +17,15 @@ function createMenu() {
     tab.classList.add("tab");
     tab.classList.add("menu-tab");
 
-    tab.appendChild(createCard("Fried Dumplings", fried_d));
-    tab.appendChild(createCard("Spinach Dumplings", spinach_d));
-    tab.appendChild(createCard("Soup Dumplings", soup_d));
-    tab.appendChild(createCard("Soucey Dumplings", soucey_d));
-    tab.appendChild(createCard("Parsley Dumplings", parsley_d));
-    tab.appendChild(createCard("Pierogis Dumplings", pierogis_d));
-    tab.appendChild(createCard("Round Dumplings", round_d));
+    tab.appendChild(createCard(fried_d, "Fried Dumplings", "Fried Dumplings", menu-card));
+    tab.appendChild(createCard(spinach_d, "Spinach Dumplings", "Spinach Dumplings", menu-card));
+    tab.appendChild(createCard(soup_d, "Soup Dumplings", "Soup Dumplings", menu-card));
+    tab.appendChild(createCard(soucey_d, "Soucey Dumplings", "Soucey Dumplings", menu-card));
+    tab.appendChild(createCard(parsley_d, "Parsley Dumplings", "Parsley Dumplings", menu-card));
+    tab.appendChild(createCard(pierogis_d, "Pierogis Dumplings", "Pierogis Dumplings", menu-card));
+    tab.appendChild(createCard(round_d, "Round Dumplings", "Round Dumplings", menu-card));
 
     return tab
-}
-
-function createCard(dishName, imgSrc) {
-    const card = document.createElement("div");
-    card.classList.add("menu-card");
-
-    const dishImg = document.createElement("img");
-    dishImg.alt = dishName;
-    dishImg.src = imgSrc;
-    card.appendChild(dishImg);
-
-    const dishDescription = document.createElement("div");
-    const dish = document.createElement("p");
-    dish.innerHTML = dishName;
-    dishDescription.appendChild(dish);
-    card.appendChild(dishDescription);
-
-    return card
 }
 
 export {createMenu}
