@@ -2,6 +2,8 @@
   Author: przewnic
   Project: Restaurant-Page
 */
+import createDropdown from './dropDown';
+
 function createTabButton(name, active = false) {
   const tab = document.createElement('button');
   tab.innerHTML = name;
@@ -24,8 +26,10 @@ export default function createHeader() {
   nav.appendChild(createTabButton('Home', true));
   nav.appendChild(createTabButton('Menu'));
   nav.appendChild(createTabButton('Contact'));
-
   header.appendChild(nav);
+
+  const dropDown = createDropdown(nav);
+  header.appendChild(dropDown);
 
   return header;
 }
