@@ -1,15 +1,13 @@
 /*
   Author: przewnic
-  Project: Restaurant-Page 
+  Project: Restaurant-Page
 */
-function createFooter() {
-    const footer = document.createElement("footer");
+export default function createFooter() {
+  const footer = document.createElement('footer');
 
-    const footer_info = document.createElement("p");
-    footer_info.innerHTML = "Copyright 2022";
-    footer.appendChild(footer_info);
+  const footerInfo = document.createElement('p');
+  footerInfo.innerHTML = 'Copyright 2022';
+  footer.appendChild(footerInfo);
 
-    return footer;
+  return footer;
 }
-
-export {createFooter}
