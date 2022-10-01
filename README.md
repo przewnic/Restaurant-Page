@@ -1,7 +1,7 @@
 # Restaurant-Page
 > Restaurant Page dynamically rendered with JavaScript
 
-> Live Demo <a href="https://przewnic.github.io/Restaurant-Page/">here</a>
+> Live Demo TODO
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -22,4 +22,4 @@
 TODO
 
 ## Project Status
-> Complete
+> In progress
