@@ -2,7 +2,7 @@
   Author: przewnic
   Project: Restaurant-Page
 */
-import createDropdown from './dropDown';
+import { createDropdown } from './dropDown';
 
 function createTabButton(name, active = false) {
   const tab = document.createElement('button');

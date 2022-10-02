@@ -1,9 +1,10 @@
 :root {
     --matcha-green: forestgreen; 
+    --light-matcha-green: rgba(34, 139, 34, 0.7);
     --light-gray: rgba(211, 211, 211, 0.5);
 
     --header-height: 52px;
-    --drop-down-height: 150px;
+    --drop-down-height: 180px;
 }
 
 html, body, #content {
@@ -40,7 +41,7 @@ header {
     align-items: center;
     padding: 0;
     margin: 0;
-    background-color: var(--light-gray);
+    background-color: var(--light-matcha-green);
     height: var(--header-height);
 }
 
@@ -59,8 +60,8 @@ nav {
     border: 2px solid var(--matcha-green);
     color: black;
     border-radius: 5px;
-    font-size: max(min(2.5vw, 26px), 16px);
-    padding: 0.5vw;
+    font-size: 20px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -126,8 +127,8 @@ nav {
     text-align: center;
     width: 80vw;
     min-width: 350px;
-    max-width: 900px;
-    height: 35vw;
+    max-width: 700px;
+    min-height: 200px;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2), 0 8px 8px 0px rgba(0, 0, 0, 0.18);
     border-radius: 2vw;
 }
@@ -145,6 +146,7 @@ nav {
 
 
 /* Maps */
+
 .gmap-div {
     height: 100%;
     width: 100%;
@@ -161,12 +163,13 @@ nav {
 
 button.drop-down-button {
     display: none;
+    box-sizing: border-box;
     background-color: red;
 }
 
 @media screen and (max-width: 600px) {
     button.drop-down-button {
-        display: block;
+        display: flex;
         background-color: var(--light-gray);
     }
 
@@ -200,4 +203,49 @@ button.drop-down-button {
         margin-top: calc(var(--header-height) + var(--drop-down-height));
     }
 
+}
+
+/* Slider */
+
+.slide {
+    display: none;
+}
+
+.slide.visible {
+    display: block;
+}
+
+.slide.visible img {
+    min-width: 350px;
+    max-width: 700px;
+    height: 25vh;
+    width: 80vw;
+    object-fit: cover;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.slide-indicators {
+    display: flex;
+    gap: 10px;
+}
+
+.slide-indicator, .slide-controls .navigator {
+    border: 2px solid var(--matcha-green);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--matcha-green);
+    user-select: none;
+}
+
+.slide-indicator.visible {
+    background-color: var(--light-matcha-green);
 }

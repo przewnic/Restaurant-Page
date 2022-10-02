@@ -8,7 +8,11 @@ function toggleDrop(event, element) {
   element.classList.toggle('drop-down-element');
 }
 
-export default function createDropdown(dropElement) {
+function removeDrop(event, element) {
+  element.classList.remove('drop-down-element');
+}
+
+function createDropdown(dropElement) {
   const dropController = document.createElement('button');
   dropController.classList.add('drop-down-button');
   const icon = document.createElement('img');
@@ -20,3 +24,5 @@ export default function createDropdown(dropElement) {
 
   return dropController;
 }
+
+export { removeDrop, createDropdown };

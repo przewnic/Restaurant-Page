@@ -6,8 +6,9 @@ import createHeader from './header';
 import createFooter from './footer';
 import createHome from './pages/home';
 import renderMain from './main';
+import { removeDrop } from './dropDown';
 
-// import "../static/styles/styles.css"  // Styles with loader
+import "../static/styles/styles.css"  // Styles with loader
 const content = document.getElementById('content');
 
 content.appendChild(createHeader());
@@ -23,9 +24,15 @@ for (const button of navButtons) {
   button.addEventListener('click', (event) => { renderMain(event, main, navButtons); });
 }
 
-function moveMain(e, element) {
+function toggleDropMain(e, element) {
   element.classList.toggle('drop-down');
 }
 
+function removeDropMain(e, element) {
+  element.classList.remove('drop-down');
+}
+
 const dropDownButton = document.querySelector('.drop-down-button');
-dropDownButton.addEventListener('click', (e) => { moveMain(e, main); });
+dropDownButton.addEventListener('click', (e) => { toggleDropMain(e, main); });
+const nav = document.querySelector('nav');
+main.addEventListener('click', (e) => { removeDrop(e, nav); removeDropMain(e, main); });
